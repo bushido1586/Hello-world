@@ -5,21 +5,19 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        double p, n, r, si;
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter the principal amount");
-        p = sc.nextFloat();
-
-        System.out.println("Enter the loan term");
-        n = sc.nextFloat();
-
-        System.out.println("Enter the rate of interest");
-        r = sc.nextFloat();
-
-        si = (p*n*r) /100;
-
-        System.out.println("The interest amount is: "+si);
+        int num = 4;
+        switch (num){
+            case 1: System.out.println("This is one");
+            break;
+            case 2: System.out.println("This is two");
+            break;
+            case 3: System.out.println("This is three");
+            break;
+            case 4: System.out.println("This is four");
+            break;
+            case 5: System.out.println("This is five");
+            break;
+            //much cleaner than if/else-if statements for large number of conditions.
+        }
     }
-
 }
