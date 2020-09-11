@@ -17,6 +17,8 @@ public class Main {
             break;
             case 5: System.out.println("This is five");
             break;
+            default: System.out.println("The number is out of range");
+            break;
             //much cleaner than if/else-if statements for large number of conditions.
         }
     }
