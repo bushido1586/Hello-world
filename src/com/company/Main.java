@@ -1,17 +1,21 @@
 package com.company;
 
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Main {
 
-    public static void main(String[] args) {
-        //Multi-dimensional arrays-> type name[][]=new type[size][size]; -or- type name[][]={{elements},{elements}};
-
-        int[][] b = {{1,2,3},{4,5,6},{7,8,9}};
-
-        for(int i=0; i<3; i++){
-            for(int j =0; j<3; j++){
-                System.out.print(b[i][j]);
-            }System.out.println();
+    public static void main(String[] args) throws IOException {
+        System.out.println("Please enter your score.");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int x= Integer.parseInt(reader.readLine());
+        reader.close();
+        if(x>=35){
+            System.out.println("You passed!");
+        }else if (x<35){
+            System.out.println("You failed");
         }
     }
 }
