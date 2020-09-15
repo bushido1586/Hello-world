@@ -6,8 +6,12 @@ public class Student {
     double chem;
     double math;
 
-    double percentage(){
-        return ((phy+chem+math)/3);
+    double percentage(double sum){
+        return (sum/3);
+    }
+
+    double total(){
+        return phy+chem+math;
     }
 
 }
