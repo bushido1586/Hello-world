@@ -13,5 +13,13 @@ public class Main {
         rob.math=84;
 
         rob.percentage();
+
+        Student john = new Student();
+        john.id=2;
+        john.phy=60;
+        john.chem=70;
+        john.math=80;
+
+        john.percentage();
     }
 }
