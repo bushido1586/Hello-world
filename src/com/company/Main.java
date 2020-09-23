@@ -4,12 +4,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        PracticeProblem7 programmer = new PracticeProblem7();
+        //programmer.displayAttributes();
+        programmer.id=2;
+        programmer.name="Brad";
+        programmer.salary=70000;
+        System.out.println(programmer.name+" "+programmer.id+" "+programmer.salary);
 
-        //creating object
-
-        Student rob = new Student(1,60,76,89);
-        System.out.println(rob.phy);
-        Student john = new Student(2,68, 65, 90);
-        System.out.println(john.math);
     }
 }
