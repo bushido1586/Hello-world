@@ -7,15 +7,18 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter user ID: ");
-        int id = sc.nextInt();
+        System.out.println("Please enter deposit amount: ");
+        int deposit = sc.nextInt();
+        int accountBalance = 0;
         try{
-            if(id != 1234){
-                throw new ArithmeticException("Invalid User ID");
+            if(deposit < 0){
+                throw new NegativeNotAllowedException("Negative Not allowed");
             }
-        }catch (ArithmeticException e){
-            e.printStackTrace();
+        }catch (ArithmeticException | NegativeNotAllowedException e){
+            System.out.println("Negative not allowed");
         }
+        System.out.println("Account balance now: "+ (accountBalance+deposit));
+
     }
 
 }
