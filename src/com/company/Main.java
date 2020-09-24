@@ -1,17 +1,20 @@
 package com.company;
 
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        int age = 15;
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter user ID: ");
+        int id = sc.nextInt();
         try{
-            if(age<18){
-                throw new NotAnAdultException();
+            if(id != 1234){
+                throw new ArithmeticException("Invalid User ID");
             }
-        }catch (NotAnAdultException e){
-            System.out.println(e);
+        }catch (ArithmeticException e){
+            e.printStackTrace();
         }
     }
 
