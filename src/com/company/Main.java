@@ -7,12 +7,12 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        FileInputStream f = new FileInputStream("demo.txt");
-        int i = f.read();
-        while(i != -1){
-            System.out.print((char)i);
-            i = f.read();
-        }
+        FileOutputStream f = new FileOutputStream("demo.txt");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter text for the file:");
+        String s = reader.readLine();
+        byte b[] =s.getBytes();
+        f.write(b);
         f.close();
     }
 
