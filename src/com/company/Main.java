@@ -1,24 +1,19 @@
 package com.company;
 
 
-import java.util.Scanner;
+import java.io.*;
+
 
 public class Main {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter deposit amount: ");
-        int deposit = sc.nextInt();
-        int accountBalance = 0;
-        try{
-            if(deposit < 0){
-                throw new NegativeNotAllowedException("Negative Not allowed");
-            }
-        }catch (ArithmeticException | NegativeNotAllowedException e){
-            System.out.println("Negative not allowed");
+    public static void main(String[] args) throws Exception {
+        FileInputStream f = new FileInputStream("demo.txt");
+        int i = f.read();
+        while(i != -1){
+            System.out.print((char)i);
+            i = f.read();
         }
-        System.out.println("Account balance now: "+ (accountBalance+deposit));
-
+        f.close();
     }
 
 }
