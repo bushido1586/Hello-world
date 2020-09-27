@@ -11,7 +11,7 @@ public class Main {
          */
         int start =0;
         int end = 10;
-        char tar[] = new char[end-start];
+        char[] tar = new char[end-start];
 
         sentence.getChars(start, end, tar, 0);
         System.out.println(tar);
