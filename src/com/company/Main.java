@@ -6,11 +6,15 @@ public class Main {
 
     public static void main(String[] args)  {
 
-        String sentence = "competition";
-        char[] c =sentence.toCharArray();
+        String s1 = "John";
+        String s2 = "john";
 
-        for (int i=0; i<sentence.length(); i++){
-            System.out.println(c[i]);
+        //regular .equals() is case sesative.
+
+        if(s1.equalsIgnoreCase(s2)){
+            System.out.println("The two strings match");
+        }else{
+            System.out.println("The two strings to not match");
         }
     }
 
