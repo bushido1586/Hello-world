@@ -6,16 +6,13 @@ public class Main {
 
     public static void main(String[] args)  {
 
-        String s1 = "John";
-        String s2 = "john";
+        String s1 = "Hello there";
+        String s2 = "there";
 
-        //regular .equals() is case sesative.
 
-        if(s1.equalsIgnoreCase(s2)){
-            System.out.println("The two strings match");
-        }else{
-            System.out.println("The two strings to not match");
-        }
+        //^ toffset where to start first ont, oofset where to start, second one, len starts at index 0
+
+        System.out.println(s1.regionMatches(6,s2,0,4));
     }
 
 }
