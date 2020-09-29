@@ -6,12 +6,27 @@ public class Main {
 
     public static void main(String[] args)  {
 
-        String s1 = String.join(" : ", "red", "blue", "green");
-        System.out.println(s1);
-        String s2 = String.join("/", "12","11","2020");
-        System.out.println(s2);
+        StringBuffer sb = new StringBuffer("Johny");
+        System.out.println(sb);
+
+        System.out.println(sb.length());
+        System.out.println(sb.capacity()); //SB class has capacity of +16 chars to the String passed
+
+        sb.append("Ford");
+        System.out.println(sb);
 
 
+        sb.insert(5,"Word");//<offset of 2 starts at index#2 for example
+        System.out.println(sb);
+
+        //sb.reverse();
+        //System.out.println(sb);
+
+       /* sb.delete(0,5);  //starts at 0 ends at 5
+        System.out.println(sb);
+        */
+        sb.deleteCharAt(3);
+        System.out.println(sb);
     }
 
 }
