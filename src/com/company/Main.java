@@ -1,32 +1,28 @@
 package com.company;
 
 
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args)  {
 
-        StringBuffer sb = new StringBuffer("Johny");
-        System.out.println(sb);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter username: ");
+        String userName = sc.next();
+        System.out.println("Please enter password: ");
+        String password = sc.next();
 
-        System.out.println(sb.length());
-        System.out.println(sb.capacity()); //SB class has capacity of +16 chars to the String passed
+        if (userName.length()>6 && password.length()>8){
+            System.out.println("Thank you, "+userName+", welcome!");
+        }else if(userName.length()<6 && password.length()>8){
+            System.out.println("Username not accepted, please make username more than 6 characters");
+        }else if(userName.length()>6 && password.length()<8){
+            System.out.println("Password must be 8 characters");
+        }else if (userName.length()<6 && password.length()<8){
+            System.out.println("Username and password do not meet minimum requirements");
+        }
 
-        sb.append("Ford");
-        System.out.println(sb);
-
-
-        sb.insert(5,"Word");//<offset of 2 starts at index#2 for example
-        System.out.println(sb);
-
-        //sb.reverse();
-        //System.out.println(sb);
-
-       /* sb.delete(0,5);  //starts at 0 ends at 5
-        System.out.println(sb);
-        */
-        sb.deleteCharAt(3);
-        System.out.println(sb);
     }
 
 }
