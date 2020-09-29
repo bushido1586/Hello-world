@@ -6,12 +6,12 @@ public class Main {
 
     public static void main(String[] args)  {
 
-        String s1 = "Hello there";
-        String s2 = "there";
+        String s1 = "Hello ";
+        String s2 ="World";
 
-        //System.out.println(s1.regionMatches(6,s2,0,4));
-        System.out.println(s1.endsWith("ere"));
-        System.out.println(s2.startsWith("t"));
+        String s3 = s1.concat(s2);
+        System.out.println(s3);
+
     }
 
 }
