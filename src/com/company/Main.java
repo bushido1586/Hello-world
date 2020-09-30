@@ -7,7 +7,6 @@ public class Main {
     public static void main(String[] args)  {
         //1.)
         String s = "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.";
-        //Scanner sc = new Scanner(System.in);
         String s1 = s.replace("fox", "frog");
         System.out.println(s1);
 
