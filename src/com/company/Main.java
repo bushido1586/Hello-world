@@ -9,6 +9,10 @@ public class Main {
         v.drive();
         v.stop();
 
+        People p = new People();
+        p.eating();
+        p.playing();
+
     }
 
 }
