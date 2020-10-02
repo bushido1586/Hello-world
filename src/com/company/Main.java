@@ -4,8 +4,10 @@ import demo.Link;
 public class Main {
 
     public static void main(String[] args)  {
-        Link l = new Link();
-        l.displayLink();
+
+        Demo d = new Demo();
+        d.displayDemo();
+
     }
 
 }
