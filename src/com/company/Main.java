@@ -5,8 +5,9 @@ public class Main {
 
     public static void main(String[] args)  {
 
-        Demo d = new Demo();
-        d.displayDemo();
+        Vehicle v = new Vehicle();
+        v.drive();
+        v.stop();
 
     }
 
