@@ -1,8 +1,13 @@
 package com.company;
 
-public interface Car {
+public class Car {
+    int price;
+    String name;
+    String brand;
 
-    void drive();
-    void stop();
-
+    Car(int p, String n, String b){
+        price = p;
+        name = n;
+        brand = b;
+    }
 }
