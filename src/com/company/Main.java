@@ -1,41 +1,25 @@
 package com.company;
 
-import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Main {
 
     public static void main(String[] args)  {
+//putting objects into LinkedList
+        LinkedList<Car> c = new LinkedList<>();
+        Car c1 = new Car(50000, "Cherokee", "Jeep");
+        Car c2 = new Car(30000, "Corolla", "Toyota");
+        Car c3 = new Car(40000, "Charger", "Dodge");
+        Car c4 = new Car(60000, "F150 Raptor", "Ford");
 
-        LinkedList<String> ll = new LinkedList<>();
-        ll.add("John");
-        ll.add("Alex");
-        ll.add("Rob");
-        ll.add("Phillip");
+        c.add(c1);
+        c.add(c2);
+        c.add(c3);
+        c.add(c4);
 
-        ll.add(1, "Johny");
-
-        LinkedList<String> l1 = new LinkedList<>();
-        l1.add("Ford");
-        l1.add("Mercury");
-        l1.add("BMW");
-
-        ll.addAll(l1);
-
-        ll.addFirst("FirstName");
-        ll.addLast("CarName");
-
-        ll.remove("Alex");
-
-        ll.remove(0);
-
-        //ll.clear();
-
-        Iterator<String> i = ll.iterator();
-        while(i.hasNext()){
-            System.out.println(i.next());
+        for (Car car : c){
+            System.out.println(car.brand+" "+ car.name+" "+car.price);
         }
-
     }
 
 }
