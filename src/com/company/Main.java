@@ -15,7 +15,7 @@ public class Main {
 
         ll.add(1, "Johny");
 
-        LinkedList<String> l1 = new LinkedList<String>();
+        LinkedList<String> l1 = new LinkedList<>();
         l1.add("Ford");
         l1.add("Mercury");
         l1.add("BMW");
