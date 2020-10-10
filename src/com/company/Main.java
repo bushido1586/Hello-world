@@ -4,12 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Number n;
+        Demo d;
 
-        n = () -> 200 * 100;
-
-        System.out.println(n.displayNumber());
-
+        d= (a)-> a*200;
+        //d.demoMethod(400);
+        System.out.println(d.demoMethod(400));
     }
 
 }
