@@ -4,17 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Message<String> message;
-        message = (m)->{
-          return m;
-        };
-        System.out.println(message.displayMessage("Hello There"));
+        System.out.println(Test.display((x)-> {return x;}, "Hello"));
 
-        Message<Integer> message1;
-        message1 = (m) ->{
-            return m;
-        };
-        System.out.println(message1.displayMessage(100));
     }
 
 }
