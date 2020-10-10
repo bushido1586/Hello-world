@@ -4,11 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Demo d;
+        LambdaTrials l;
 
-        d= (a)-> a*200;
-        //d.demoMethod(400);
-        System.out.println(d.demoMethod(400));
+        l= (a,b) -> a*b;
+
+        System.out.println(l.displayLambda(500, 600));
     }
 
 }
