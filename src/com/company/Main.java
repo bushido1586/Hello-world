@@ -4,11 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LambdaTrials l;
+        Person p;
 
-        l= (a,b) -> a*b;
+        p=(age)-> {
+            if(age>18){
+                System.out.println("Adult");
+            }else{
+                System.out.println("Not an adult");
+            }
+        };
 
-        System.out.println(l.displayLambda(500, 600));
+        p.checkForAdult(29);
     }
 
 }
