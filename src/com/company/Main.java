@@ -5,23 +5,22 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        //Practice Example 19:
+        Student s1 = new Student("Brad", 1, 85.6);
+        Student s2 = new Student("Kristin", 2, 95.4);
+        Student s3 = new Student("Paul", 3, 90.5);
+        Student s4 = new Student("Holly", 4, 92.1);
 
-        ArrayList<String> food = new ArrayList<>();
-        food.add("Chicken Parm");
-        food.add("Apple Pie");
-        food.add("Hibachi");
-        food.add("Pizza");
-        food.add("Cheeseburger");
+        ArrayList<Student> roster = new ArrayList<>();
+        roster.add(s1);
+        roster.add(s2);
+        roster.add(s3);
+        roster.add(s4);
 
-        for (String s : food) {
-            System.out.println(s);
+        for (Student student : roster) {
+            System.out.println(student.id + " " + student.name + " " + student.percentage);
         }
-        System.out.println("^forEach loop, for loop|");
 
-        for (int i = 0; i < food.size(); i++) {
-            System.out.println(food.get(i));
-        }
+
     }
 
 }
