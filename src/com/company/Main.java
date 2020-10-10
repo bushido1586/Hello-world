@@ -1,25 +1,33 @@
 package com.company;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
 
 public class Main {
 
     public static void main(String[] args)  {
-//putting objects into LinkedList
-        LinkedList<Car> c = new LinkedList<>();
-        Car c1 = new Car(50000, "Cherokee", "Jeep");
-        Car c2 = new Car(30000, "Corolla", "Toyota");
-        Car c3 = new Car(40000, "Charger", "Dodge");
-        Car c4 = new Car(60000, "F150 Raptor", "Ford");
+    //List Interface
 
-        c.add(c1);
-        c.add(c2);
-        c.add(c3);
-        c.add(c4);
+        List<String> l = new ArrayList<>();
 
-        for (Car car : c){
-            System.out.println(car.brand+" "+ car.name+" "+car.price);
+        l.add("John");
+        l.add("Mike");
+        l.add("Rob");
+        l.add("Steven");
+        l.add(1, "Alex");
+
+        l.remove("Rob");
+
+        l.remove(0);
+
+        System.out.println(l.get(2));
+
+        ListIterator li = l.listIterator();
+        while (li.hasNext()){
+            System.out.println(li.next());
         }
+
     }
 
 }
