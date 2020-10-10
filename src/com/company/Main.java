@@ -1,29 +1,24 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args)  {
-    //List Interface
+    //HashSet
 
-        List<String> l = new ArrayList<>();
+        Set<String> l = new HashSet<>();
 
         l.add("John");
         l.add("Mike");
         l.add("Rob");
         l.add("Steven");
-        l.add(1, "Alex");
+        l.add("Alex");
 
         l.remove("Rob");
 
-        l.remove(0);
 
-        System.out.println(l.get(2));
-
-        ListIterator li = l.listIterator();
+        Iterator li = l.iterator();
         while (li.hasNext()){
             System.out.println(li.next());
         }
