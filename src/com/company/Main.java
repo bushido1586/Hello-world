@@ -9,6 +9,12 @@ public class Main {
           return m;
         };
         System.out.println(message.displayMessage("Hello There"));
+
+        Message<Integer> message1;
+        message1 = (m) ->{
+            return m;
+        };
+        System.out.println(message1.displayMessage(100));
     }
 
 }
