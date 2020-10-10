@@ -5,20 +5,19 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args)  {
-    //HashSet
+    //TreeSet
 
-        Set<String> l = new HashSet<>();
+        TreeSet<String> l = new TreeSet<>();
 
-        l.add("John");
-        l.add("Mike");
-        l.add("Rob");
-        l.add("Steven");
-        l.add("Alex");
-
-        l.remove("Rob");
+        l.add("Red");
+        l.add("Blue");
+        l.add("Green");
+        l.add("Yellow");
 
 
-        Iterator li = l.iterator();
+
+
+        Iterator li = l.descendingIterator();
         while (li.hasNext()){
             System.out.println(li.next());
         }
