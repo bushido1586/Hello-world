@@ -1,14 +1,14 @@
 package com.company;
 
-public class ThreadClass implements Runnable {
-    Thread t;
+public class ThreadClass extends Thread {
 
     ThreadClass(){
-        t= new Thread(this, "New Thread");
-        System.out.println("Thread "+t);
+        super("New Thread");
+        System.out.println(this);
     }
-    @Override
-    public void run() {
-        System.out.println("This is a new thread");
+
+    public void run(){
+        System.out.println("Thread is Running");
     }
+
 }
