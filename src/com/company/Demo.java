@@ -1,19 +1,9 @@
 package com.company;
 
-public class Demo<T, Y> {
-    T value;
-    Y message;
+public class Demo {
 
-    public Demo(T v, Y m){
-        value =v;
-        message = m;
-    }
+    public static <T> void displayMessage(T m){
+        System.out.println(m);
+    }//allows m to be of any type
 
-    T getValue(){
-        return value;
-    }
-
-    Y getMessage(){
-        return message;
-    }
 }
