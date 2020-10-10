@@ -1,9 +1,16 @@
 package com.company;
 
-public class Demo {
+public class Demo<T extends java.lang.Number> {
 
-    public static <T> void displayMessage(T m){
-        System.out.println(m);
-    }//allows m to be of any type
+    T number;
+
+    public Demo(T n){
+        number=n;
+    }
+
+    T getNumber(){
+        return number;
+    }
+
 
 }

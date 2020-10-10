@@ -4,9 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Demo demo = new Demo();
-        demo.displayMessage("Hello there");
-        demo.displayMessage(100);
+        Demo<Double> demo = new Demo<>(95.2);
+        System.out.println(demo.getNumber());
+
+
     }
 
 }
