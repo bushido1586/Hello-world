@@ -11,6 +11,8 @@ public class ThreadClass implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("thread is Running");
+        for (int i=0; i<5; i++){
+            System.out.println("second thread"+i);
+        }
     }
 }
