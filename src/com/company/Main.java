@@ -4,8 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Demo<Double> demo = new Demo<>(95.2);
-        System.out.println(demo.getNumber());
+        Thread t = new Thread();
+        t.setName("DemoThread");
+        System.out.println(t.currentThread());
+        //[main,5,main]-thread name, priority, group.
 
 
     }
