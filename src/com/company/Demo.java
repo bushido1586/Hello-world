@@ -1,7 +1,13 @@
 package com.company;
 
-public interface Demo {
+public class Demo<T> {
+    T value;
 
-    int demoMethod(int a);
+    public Demo(T v){
+        value =v;
+    }
 
+    T getValue(){
+        return value;
+    }
 }
