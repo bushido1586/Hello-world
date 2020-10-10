@@ -4,24 +4,24 @@ import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args)  {
-    //TreeSet part 2 (objects)
+    public static void main(String[] args) {
+        //Practice Example 19:
 
-        TreeSet<Car> t = new TreeSet<>();
-        Car c1 = new Car(50000, "Cherokee", "Jeep");
-        Car c2 = new Car(65000, "525i", "BMW");
-        Car c3 = new Car(80000, "A8", "audi");
-        Car c4 = new Car(40000, "Camry", "Toyota");
+        ArrayList<String> food = new ArrayList<>();
+        food.add("Chicken Parm");
+        food.add("Apple Pie");
+        food.add("Hibachi");
+        food.add("Pizza");
+        food.add("Cheeseburger");
 
-        t.add(c1);
-        t.add(c2);
-        t.add(c3);
-        t.add(c4);
-
-        for (Car cars : t){
-            System.out.println(cars.brand+" "+cars.name+" "+cars.price);
+        for (String s : food) {
+            System.out.println(s);
         }
+        System.out.println("^forEach loop, for loop|");
 
+        for (int i = 0; i < food.size(); i++) {
+            System.out.println(food.get(i));
+        }
     }
 
 }
